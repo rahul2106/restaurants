@@ -11,8 +11,7 @@ import {map, startWith} from 'rxjs/operators';
 export class AppComponent implements OnInit{
   title = 'newRestaurant';
   myControl = new FormControl();
-
-  filteredOptions: Observable<any>;
+  filteredOptions:any;
 
 constructor(private locationService:LocationService){}
 //   ngOnInit(){
@@ -26,10 +25,10 @@ ngOnInit() {
   //   startWith(''),
   //   map(value => this._filter(value))
   // );
-  this.filteredOptions=this.locationService.getCategories().subscribe((data:any[])=>{
+  this.filteredOptions=this.locationService.getCategories().subscribe((data:any)=>{
       console.log(data);
       this.filteredOptions=data;
-      console.log((this.filteredOptions.categories));
+      console.log((this.filteredOptions));
     });
 
 }
