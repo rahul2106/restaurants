@@ -1,11 +1,1 @@
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>Assignee</mat-label>
-    <input type="text" matInput  [matAutocomplete]="auto">
-    <mat-autocomplete #auto="matAutocomplete" >
-      <mat-option *ngFor="let option of filteredOptions.categories" [value]="option.categories.name">
-        {{option.categories.name}}
-      </mat-option>
-    </mat-autocomplete>
-  </mat-form-field>
-</form>
+<app-location></app-location>

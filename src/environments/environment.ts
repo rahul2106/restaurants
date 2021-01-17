@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  url: "https://developers.zomato.com/api/v2.1/",
+ userkey: "8301f7dd6d22fc3f75399fa849e9d123"
+
 };
 
 /*
